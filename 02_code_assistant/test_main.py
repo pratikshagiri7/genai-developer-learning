@@ -1,7 +1,7 @@
 from main import is_palindrome
 
 
-def test_palindrome_simple():
+def test_palindrome_word():
     assert is_palindrome("madam") == True
 
 
@@ -13,8 +13,8 @@ def test_case_insensitive():
     assert is_palindrome("RaceCar") == True
 
 
-def test_single_character():
-    assert is_palindrome("a") == True
+def test_palindrome_sentence():
+    assert is_palindrome("nurses run") == True
 
 
 def test_empty_string():
